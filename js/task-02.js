@@ -22,4 +22,4 @@ const ingredientsItems = ingredients.map((ingredient) => {
  ingredientsRef.append(item);
 });
 
-
+console.log(ingredientsRef);

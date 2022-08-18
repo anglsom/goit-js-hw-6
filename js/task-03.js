@@ -19,3 +19,15 @@ const images = [
   },
 ];
 
+const galleryEl = document.querySelector('.gallery');
+galleryEl.style.listStile = 'none';
+const itemMarkUp = images
+  .map(element => `<li><img src = '${element.url}' alt="${element.alt}" width = '420' ></li>`)
+  .join('');
+galleryEl.insertAdjacentHTML('beforeend', itemMarkUp);
+
+galleryEl.style.display = 'flex';
+galleryEl.style.listStile = 'none';
+galleryEl.style.gap = '30px';
+
+console.log(galleryEl);
